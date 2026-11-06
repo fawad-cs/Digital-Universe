@@ -1,0 +1,153 @@
+.footer {
+  background: #050508;
+  border-top: 1px solid rgba(168, 85, 247, 0.18);
+  padding: 75px 0 25px;
+}
+
+.footer-main {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.3fr;
+  gap: 50px;
+  padding-bottom: 55px;
+}
+
+.footer-logo {
+  color: #f8fafc;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.footer-logo span {
+  color: #a855f7;
+}
+
+.footer-brand p,
+.footer-connect p {
+  color: #9993a8;
+  font-size: 14px;
+  line-height: 1.8;
+  max-width: 320px;
+  margin-top: 18px;
+}
+
+.footer-navigation,
+.footer-connect {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-navigation h4,
+.footer-connect h4 {
+  color: #c084fc;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 22px;
+}
+
+.footer-navigation a {
+  color: #9993a8;
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 13px;
+  transition: 0.3s ease;
+}
+
+.footer-navigation a:hover {
+  color: #c084fc;
+  transform: translateX(4px);
+}
+
+.footer-contact-link {
+  color: #c084fc;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.footer-contact-link span {
+  margin-left: 5px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-bottom p,
+.back-to-top {
+  color: #777183;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.back-to-top:hover {
+  color: #c084fc;
+}
+
+@media (max-width: 768px) {
+  .footer-main {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 25px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-main {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+}
+/* Footer Focus Accessibility */
+.footer a:focus-visible {
+  outline: 2px solid #c084fc;
+  outline-offset: 5px;
+  border-radius: 4px;
+}
+
+/* Smooth Back To Top */
+.back-to-top {
+  transition: color 0.3s ease;
+}
+
+/* Small Screen Improvements */
+@media (max-width: 480px) {
+  .footer {
+    padding: 55px 0 22px;
+  }
+
+  .footer-main {
+    gap: 32px;
+    padding-bottom: 35px;
+  }
+
+  .footer-bottom {
+    gap: 14px;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .footer a {
+    transition: none !important;
+  }
+}

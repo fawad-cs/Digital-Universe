@@ -1,0 +1,64 @@
+.custom-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 23px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  color: #fff;
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+  border: 1px solid transparent;
+  box-shadow: 0 5px 25px rgba(124, 58, 237, 0.2);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(168, 85, 247, 0.4);
+}
+
+.btn-outline {
+  color: #c084fc;
+  background: rgba(168, 85, 247, 0.08);
+  border: 1px solid rgba(168, 85, 247, 0.5);
+}
+
+.btn-outline:hover {
+  color: #fff;
+  background: #7c3aed;
+  transform: translateY(-3px);
+}
+
+.custom-btn svg {
+  transition: transform 0.3s ease;
+}
+
+.custom-btn:hover svg {
+  transform: translate(3px, -3px);
+}
+
+.custom-btn:focus-visible {
+  outline: 2px solid #c084fc;
+  outline-offset: 5px;
+}
+
+@media (max-width: 480px) {
+  .custom-btn {
+    padding: 12px 19px;
+    font-size: 13px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .custom-btn,
+  .custom-btn svg {
+    transition: none;
+  }
+}

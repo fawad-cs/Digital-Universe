@@ -1,0 +1,142 @@
+
+.project-card {
+  overflow: hidden;
+  border: 1px solid rgba(192, 132, 252, 0.15);
+  border-radius: 16px;
+  background: linear-gradient(
+    145deg,
+    rgba(25, 16, 39, 0.85),
+    rgba(10, 8, 15, 0.98)
+  );
+  transition: all 0.35s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(192, 132, 252, 0.55);
+  box-shadow: 0 18px 45px rgba(124, 58, 237, 0.13);
+}
+
+.project-image-wrapper {
+  height: 230px;
+  position: relative;
+  overflow: hidden;
+  background: #160d23;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.07);
+}
+
+.project-number {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 2;
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 7px;
+  color: white;
+  background: rgba(5, 5, 8, 0.65);
+  backdrop-filter: blur(10px);
+  font-size: 11px;
+}
+
+.project-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(5, 5, 8, 0.35),
+    transparent 65%
+  );
+  pointer-events: none;
+}
+
+.project-info {
+  padding: 25px;
+}
+
+.project-category {
+  color: #c084fc;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.project-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 13px;
+  color: #c084fc;
+}
+
+.project-title-row h3 {
+  color: #f8fafc;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.project-description {
+  min-height: 65px;
+  margin-top: 13px;
+  color: #9993a8;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.project-technologies span {
+  padding: 7px 10px;
+  border: 1px solid rgba(192, 132, 252, 0.15);
+  border-radius: 6px;
+  color: #d8b4fe;
+  background: rgba(168, 85, 247, 0.07);
+  font-size: 10px;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 17px;
+  padding-top: 20px;
+  margin-top: 22px;
+  border-top: 1px solid rgba(192, 132, 252, 0.12);
+}
+
+.project-links a,
+.project-link-disabled {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.project-links a {
+  color: #c084fc;
+  transition: color 0.3s ease;
+}
+
+.project-links a:hover {
+  color: #fff;
+}
+
+.project-link-disabled {
+  color: #777184;
+  cursor: default;
+}

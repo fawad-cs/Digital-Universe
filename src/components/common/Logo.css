@@ -1,0 +1,32 @@
+.brand-logo {
+  display: inline-flex;
+  align-items: center;
+  color: #f8fafc;
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: -1px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.brand-logo span {
+  color: #a855f7;
+  transition: text-shadow 0.3s ease;
+}
+
+.brand-logo:hover span {
+  text-shadow: 0 0 15px #a855f7;
+}
+
+@media (max-width: 480px) {
+  .brand-logo {
+    font-size: 23px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-logo,
+  .brand-logo span {
+    transition: none;
+  }
+}

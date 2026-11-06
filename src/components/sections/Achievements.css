@@ -1,0 +1,115 @@
+.achievements-section {
+  background: var(--bg-secondary);
+}
+
+.achievements-heading {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 55px;
+}
+
+.section-label {
+  color: var(--primary-purple);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.achievements-heading h2 {
+  font-size: clamp(32px, 5vw, 48px);
+  color: var(--text-primary);
+  margin: 15px 0;
+}
+
+.achievements-heading h2 span {
+  color: var(--primary-purple);
+}
+
+.achievements-heading p {
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.achievement-card {
+  position: relative;
+  overflow: hidden;
+  padding: 30px;
+  min-height: 245px;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(168, 85, 247, 0.16);
+  border-radius: 18px;
+  transition: 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-7px);
+  border-color: var(--primary-purple);
+  background: rgba(168, 85, 247, 0.06);
+}
+
+.achievement-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.achievement-number {
+  color: var(--text-muted);
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.achievement-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  color: var(--primary-purple);
+  background: rgba(168, 85, 247, 0.12);
+  border-radius: 14px;
+}
+
+.achievement-category {
+  color: var(--primary-purple);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.achievement-card h3 {
+  color: var(--text-primary);
+  font-size: 21px;
+  margin: 10px 0;
+}
+
+.achievement-card p {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.7;
+  max-width: 420px;
+}
+
+.achievement-line {
+  width: 45px;
+  height: 3px;
+  background: var(--primary-purple);
+  border-radius: 5px;
+  margin-top: 22px;
+}
+
+@media (max-width: 650px) {
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .achievement-card {
+    padding: 24px;
+  }
+}
